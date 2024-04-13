@@ -1,38 +1,60 @@
-.App {
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .blog-heading h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+.list{
+  display: grid;
+  gap: 20px;
+  padding: 10px 28px;
+  grid-template-columns: auto auto auto;
+}
+.list a{
+  text-decoration: none;
+}
+.blog-post {
+  margin-bottom: 20px;
+  padding: 25px 30px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+}
+
+.blog-post h3 {
+  color: #333;
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blog-post p {
+  color: #666;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 30px;
+  }
+  .list{
+     display: grid;
+     grid-template-columns: 1fr;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.blog-detalis-page{
+  padding: 37px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.blog-detalis-page h2{
+   text-align: center;
+   margin-top: 20px;
+   margin-bottom: 50px;
 }
